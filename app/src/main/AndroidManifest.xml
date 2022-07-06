@@ -11,8 +11,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidProject"
+        android:theme="@style/Mytheme"
         tools:targetApi="31">
+        <activity
+            android:name=".ViewInfo"
+            android:exported="false" />
+        <activity
+            android:name=".AddingInfo"
+            android:exported="false" />
         <activity
             android:name=".Update_Activity"
             android:exported="false" />
