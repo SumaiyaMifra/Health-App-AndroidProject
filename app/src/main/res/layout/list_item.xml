@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="16dp"
+    android:background="@color/purple_200">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:padding="10sp"
+                android:textSize="20sp">></TextView>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6:00AM"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:padding="10sp"
+                android:textSize="20sp">></TextView>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11/4/21"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Systolic:"
+                android:padding="10sp"
+                android:textSize="20sp">></TextView>
+
+            <TextView
+                android:id="@+id/systolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="180"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dayastolic:"
+                android:padding="10sp"
+                android:textSize="20sp">></TextView>
+
+            <TextView
+                android:id="@+id/dayastolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulse rate:"
+                android:padding="10sp"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/bp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="72"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment:"
+                android:padding="10sp"
+                android:textSize="20sp">></TextView>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High Pressure"
+                android:padding="10sp"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/edit"
+                android:layout_marginRight="50px"
+                android:background="#1EBBCF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit">
+
+            </Button>
+            <Button
+                android:id="@+id/delete"
+                android:layout_marginLeft="40px"
+                android:background="#E53935"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"></Button>
+
+        </LinearLayout>
+        <TableRow
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="4dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

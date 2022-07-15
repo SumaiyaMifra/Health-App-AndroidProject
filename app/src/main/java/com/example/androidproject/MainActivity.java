@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 //TextView textView = findViewById(R.id.textView);
             }
-        },  4000);
+        },  1000);
     }
 }
