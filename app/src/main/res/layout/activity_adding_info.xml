@@ -6,6 +6,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AddingInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD YOUR DATA"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:padding="10sp"
+            android:textAlignment="center">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Time:"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="example:6:00AM"/>
+
+
+    </LinearLayout>
+
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -46,6 +88,7 @@
 
 
 </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,7 +184,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+
+            android:hint="80"/>
+
             android:hint="example:6:00AM"/>
+
 
 
     </LinearLayout>
@@ -171,6 +218,33 @@
 
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10sp"
+            android:backgroundTint="#039BE5"
+            android:padding="20sp"
+            android:text="ADD"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="InvalidId">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+=======
  <LinearLayout
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
@@ -196,3 +270,4 @@
 
 
 </LinearLayout>
+
