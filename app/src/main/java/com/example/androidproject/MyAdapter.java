@@ -73,6 +73,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 dayastolic.setText(measurements.getDayastolic());
                 comment.setText(measurements.getComment());
                 bp.setText(measurements.getBp());
+                    int dd=Integer.parseInt(measurements.getDayastolic());
+                int ss=Integer.parseInt(measurements.getSystolic());
+                if(dd<60 || dd>90)
+                {
+                    dayastolic.setTextColor(Color.RED);
+                }
+                if(ss<90 || ss>140)
+                {
+                   systolic.setTextColor(Color.RED);
+                }
                 dialogPlus.show();
                 update.setOnClickListener(new View.OnClickListener() {
                     @Override
