@@ -44,6 +44,12 @@ public class AddingInfo extends AppCompatActivity {
       String comment=ecomment.getText().toString();
       String id=measure.push().getKey();
       String bp=ebp.getText().toString();
+      etime.setText("");
+      edate.setText("");
+      esystolic.setText("");
+      edayastolic.setText("");
+      ecomment.setText("");
+
       Measurements measurements=new Measurements(id,time,date,systolic,dayastolic,bp,comment);
       measure.child(id).setValue(measurements);
         Toast.makeText(AddingInfo.this,"Data inserted!",Toast.LENGTH_SHORT).show();
