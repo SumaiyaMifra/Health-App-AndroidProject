@@ -52,6 +52,10 @@ public class MeasurementListTest {
         assertFalse(measurementList.getMeasure().contains(measure));
 
     }
+
+    /**
+     * exception test
+     */
     @Test
     public void testDeleteException(){
         MeasurementList measurementList=new MeasurementList();
