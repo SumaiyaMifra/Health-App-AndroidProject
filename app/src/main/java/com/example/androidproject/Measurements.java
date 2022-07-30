@@ -1,6 +1,7 @@
 package com.example.androidproject;
 
 public class Measurements {
+
     public void setTime(String time) {
         this.time = time;
     }
@@ -33,6 +34,9 @@ public class Measurements {
     public Measurements(){
 
     }
+
+    String time,date,systolic,dayastolic,comment,id,bp;
+
 
     public Measurements(String id,String time, String date, String systolic, String dayastolic,String bp, String comment) {
         this.time = time;
@@ -71,6 +75,10 @@ public class Measurements {
     }
 
 
+
+
+
+}
 
 
 }
