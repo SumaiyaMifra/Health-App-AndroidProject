@@ -50,6 +50,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.tdayastolic.setText(measurements.getDayastolic());
         holder.tcomment.setText(measurements.getComment());
         holder.tbp.setText(measurements.getBp());
+           int d=Integer.parseInt(measurements.getDayastolic());
+        int s=Integer.parseInt(measurements.getSystolic());
+    if(d<60 || d>90)
+        {
+            holder.tdayastolic.setTextColor(Color.RED);
+        }
+      if(s<90 || s>140)
+        {
+            holder.tsystolic.setTextColor(Color.RED);
+        }
         holder.btnedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,6 +83,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 dayastolic.setText(measurements.getDayastolic());
                 comment.setText(measurements.getComment());
                 bp.setText(measurements.getBp());
+                    int dd=Integer.parseInt(measurements.getDayastolic());
+                int ss=Integer.parseInt(measurements.getSystolic());
+                if(dd<60 || dd>90)
+                {
+                    dayastolic.setTextColor(Color.RED);
+                }
+                if(ss<90 || ss>140)
+                {
+                   systolic.setTextColor(Color.RED);
+                }
                 dialogPlus.show();
                 update.setOnClickListener(new View.OnClickListener() {
                     @Override
